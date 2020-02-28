@@ -12,8 +12,6 @@
 */
 
 Route::get('/', function() {
-    return view('welcome', [
-        'name' => 'what is your name?',
-        'greeting' => 'Hi!',
-    ]);
+    $items = ['apple', 'banana', 'tomato'];
+    return view('welcome', ['items' => $items]);
 });
